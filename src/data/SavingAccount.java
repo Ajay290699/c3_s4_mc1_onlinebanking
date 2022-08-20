@@ -26,13 +26,13 @@ public class SavingAccount extends BankAccount {
         System.out.println(getAvailableBalance());
     }
 
-    public double debit(double balance, double amount) {
+    public void debit(double balance, double amount) {
         double balance1 = getAvailableBalance() - amount;
-        return balance1;
+        System.out.println(balance1);
     }
 
-    public double credit(double balance, double amount) {
-        double balance1 = getAvailableBalance() - amount;
-        return balance1;
+    public void credit(double balance, double amount) {
+        double balance1 = getAvailableBalance() + amount;
+        System.out.println(balance1);
     }
 }
